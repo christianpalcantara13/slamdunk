@@ -1,12 +1,15 @@
-//import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client'; // or 'react-dom' if using older versions of React
 import './index.css';
 import Card from './Card';
+import 'tachyons';
 
-
-import { createRoot } from 'react-dom/client';
-
-const root = createRoot(document.getElementById('root'));
-root.render(<Card/>);
-
-
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
+root.render(
+    <div>
+            <Card/>;
+            <Card/>;
+            <Card/>;
+    </div>
+,document.getElementById('root'));
 
