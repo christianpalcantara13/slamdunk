@@ -1,9 +1,11 @@
-//import React from 'react';
+import React from 'react';
+import slamdunk from './Assets/Akagi.jpg';
 
 const Card =()=>{
     return(
     <div>
-        <img alt ='slamdunk'src = ''/>
+        <img src={slamdunk} alt="slamdunk" />;
+        <img alt ='slamdunk'src ='/Assets/Akagi.jpg'/>
         <div>
             <h2> christian </h2>
             <p>sample@aol.com</p>
@@ -11,6 +13,5 @@ const Card =()=>{
     </div>
        
     );
-
 }
 export default Card;
